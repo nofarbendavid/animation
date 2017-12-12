@@ -1,0 +1,92 @@
+@import 'index.scss';
+
+
+.App {
+  height: $max-height;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: $spacing-medium;
+  padding: $spacing-narrow;
+  border-radius: $border-radius;
+  border: 5px solid $light-gray-color;
+
+  .section {
+    font-size: $text-font-size;
+    margin: $spacing-wide;
+    padding: $spacing-narrow;
+    border-radius: $border-radius;
+    background-color: $light-gray-color;
+
+    .title{
+      text-decoration: underline;
+      text-align: left;
+    }
+
+    .section-options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  .btn{
+    margin-top: $spacing-wide;
+    font-size: $text-font-size;
+    margin-right: $spacing-medium;
+  }
+
+  .error{
+    ont-size: $text-font-size;
+    margin-top: $spacing-medium;
+    color: red;
+  }
+}
+
+
+
+.summary-container{
+  width: 20%;
+  height: fit-content;
+  margin: $spacing-medium;
+  padding: $spacing-narrow;
+  background-color: $light-gray-color;
+  border-radius: $border-radius;
+
+  .header{
+    font-size: 1em;
+    padding: $spacing-medium 0 0 0;
+  }
+
+  .property {
+    text-transform: capitalize;
+    margin: $spacing-narrow 0;
+
+    .property-key {
+      text-decoration: underline;
+      padding-right: $spacing-narrow;
+    }
+  }
+}
+
+.show[name='juice']{
+  -webkit-animation: myanimation 3s ease-in-out;
+}
+
+@-webkit-keyframes myanimation {
+  from{-webkit-transform:scale(0)}
+  to{-webkit-transform:scale(1)}
+}
+
+
+
+

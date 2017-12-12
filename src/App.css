@@ -1,0 +1,90 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+#root {
+  height: 100%; }
+
+.header {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 20px; }
+
+button {
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  background-color: #5C97C1;
+  border-radius: 5px;
+  outline: none;
+  border: none; }
+
+.hide {
+  display: none; }
+
+.App {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: row; }
+
+.menu-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 5px solid #D3D3D3; }
+  .menu-container .section {
+    font-size: 17px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #D3D3D3; }
+    .menu-container .section .title {
+      text-decoration: underline;
+      text-align: left; }
+    .menu-container .section .section-options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+  .menu-container .btn {
+    margin-top: 20px;
+    font-size: 17px;
+    margin-right: 10px; }
+  .menu-container .error {
+    ont-size: 17px;
+    margin-top: 10px;
+    color: red; }
+
+.summary-container {
+  width: 20%;
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  background-color: #D3D3D3;
+  border-radius: 5px; }
+  .summary-container .header {
+    font-size: 1em;
+    padding: 10px 0 0 0; }
+  .summary-container .property {
+    text-transform: capitalize;
+    margin: 5px 0; }
+    .summary-container .property .property-key {
+      text-decoration: underline;
+      padding-right: 5px; }
+
+.show[name='juice'] {
+  -webkit-animation: myanimation 3s ease-in-out; }
+
+@-webkit-keyframes myanimation {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
