@@ -1,4 +1,4 @@
-# lemonade_challenge
+# code_challenge
 code challenge solution.
 
 This project was bootstrapped with Create React App.
